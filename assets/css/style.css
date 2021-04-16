@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: sticky;
+}
+
+nav {
+  padding: 25px 15px;
+  /* background-color: transparent; */
+  /* position: sticky; */
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .section-1 {
+  display: flex;
+}
+
+nav .nav-item {
+  padding: 0 10px;
+}
+
+nav .nav-link {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+}
+
+nav .nav-link:hover {
+  color: #f5b842;
+}
+
+main .background {
+  height: 95vh;
+  background-image: url(../images/bg1.jpg);
+  background-size: cover;
+}
+
+main .background .overlay {
+  height: 95vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .background .overlay h1 {
+  font-size: 2.5em;
+  background-color: black;
+  padding: 50px;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  max-width: 90%;
+}
+
+main #about {
+  text-align: center;
+  padding: 20px 40px;
+  background-color: #333;
+  color: white;
+}
+
+main #about h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+main #about p {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: justify;
+  line-height: 2em;
+}
+
+main #about .about-bg {
+  background-image: url(../images/about1.png);
+  height: 30vh;
+  background-size: cover;
+  background-position: fixed;
+}
+
+main #about .services {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  color: black;
+}
+
+main #about .services .service {
+  min-height: 40vh;
+  padding: 20px;
+  width: 400px;
+  background-color: #f5b842;
+  box-shadow: 4px 6px 0px #fff;
+}
+
+main #about .services .service h3 {
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 1px #000;
+}
+
+main #skills {
+  padding: 40px;
+}
+
+main #skills .skill {
+  margin: 20px 0;
+}
+
+main #skills .skill h3 {
+  margin-bottom: 10px;
+  letter-spacing: 0.2em;
+}
+
+main #skills .skill .loader {
+  height: 30px;
+  background-color: #f1f1f1;
+}
+
+main #skills .skill .inner {
+  color: white;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: #333333;
+}
+
+main #skills .skill .inner-html {
+  width: 90%;
+}
+
+main #skills .skill .inner-css {
+  width: 85%;
+}
+
+main #skills .skill .inner-js {
+  width: 70%;
+}
+
+main .status {
+  padding: 40px 0;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #333333;
+  text-align: center;
+}
+
+main .status h2 {
+  margin-bottom: 5px;
+}
+
+main #contact {
+  padding: 20px 40px;
+}
+
+main #contact h1,
+main #skills h1 {
+  font-size: 3em;
+}
+
+main #contact h5,
+main #skills h5 {
+  text-transform: uppercase;
+}
+
+main #contact .contact-header,
+main #skills .skills-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main #contact .contact-info {
+  display: flex;
+  justify-content: center;
+}
+
+main #contact .contact-info .contact-item {
+  background-color: #f5b842;
+  width: 50%;
+  border: 2px solid black;
+  height: 500px;
+  box-shadow: 10px 10px 10px 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+main #contact .contact-info .address {
+  font-size: xx-large;
+  justify-content: space-evenly;
+}
+
+main #contact .contact-info form {
+  flex: 2;
+  text-align: center;
+}
+
+main #contact .contact-info form input {
+  width: 80%;
+  height: 50px;
+  border: 2px solid black;
+  padding: 4px;
+  font-family: "Roboto", sans-serif;
+}
+
+main #contact .contact-info form button {
+  width: 80%;
+  height: 40px;
+  background-color: #333333;
+  color: white;
+  margin-top: 5px;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  main .status {
+    display: block;
+  }
+
+  main .status-item {
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  main #contact .contact-info {
+    display: block;
+  }
+
+  main #contact .contact-info .contact-item {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  main #about .services {
+    display: block;
+  }
+
+  main #about .services .service {
+    min-height: 40vh;
+    padding: 20px;
+    width: 100%;
+    background-color: #f5b842;
+    box-shadow: 4px 6px 0px #fff;
+    margin-bottom: 20px;
+  }
+}
