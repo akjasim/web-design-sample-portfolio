@@ -260,7 +260,7 @@ footer {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   main #about .services {
     display: block;
   }
