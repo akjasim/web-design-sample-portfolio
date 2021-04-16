@@ -260,7 +260,7 @@ footer {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   main #about .services {
     display: block;
   }
@@ -272,5 +272,17 @@ footer {
     background-color: #f5b842;
     box-shadow: 4px 6px 0px #fff;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  main #about .services .service {
+    width: 280px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  main #about .services .service {
+    width: 350px;
   }
 }
